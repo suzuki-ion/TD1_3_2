@@ -1,0 +1,19 @@
+{
+    "PlayerStatus": {
+        "minVelocity": {
+            "x": -6.0,
+            "y": -32.0
+        },
+        "maxVelocity": {
+            "x": 6.0,
+            "y": 32.0
+        },
+        "acceleration": {
+            "x": 1.600000023841858,
+            "y": 0.800000011920929
+        },
+        "width": 64.0,
+        "height": 64.0,
+        "jumpPower": 18.5
+    }
+}

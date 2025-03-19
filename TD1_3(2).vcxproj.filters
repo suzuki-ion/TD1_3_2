@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="KamataEngine">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="KamataEngine\Source">
+      <UniqueIdentifier>{d966e9f8-e880-44ae-8586-a08515e4cffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KamataEngine\Include">
+      <UniqueIdentifier>{4aae4e40-94f7-4d32-9a91-c0c37a2edf0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KamataEngine\Adapter">
+      <UniqueIdentifier>{c6468eb4-788b-4a83-b207-a5f4804e56c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="自作ソース">
+      <UniqueIdentifier>{36d152f4-0b7c-46db-acba-65f6fa633967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="自作ヘッダー">
+      <UniqueIdentifier>{7e1880db-fb5a-4064-89f0-2a5bae4f525a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
+      <Filter>KamataEngine\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Proccess.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Source\Camera.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Source\CustomNovice.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Source\Easings.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Source\GetInput.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Source\NoviceButtonWidget.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Source\Objects.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Source\SaveData.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Source\SceneChangeAnimations.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Source\ScreenSizeGet.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Source\SoundHandle.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Source\GraphHandle.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Source\CommonFunctions.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Source\InputConfig.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Stage\Stage.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Math\Matrix3x3.h">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Math\Source\Matrix3x3.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Math\Source\Vector2.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Math\Source\Vector2Int.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Stage\StageManager.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Blocks\Source\SwitchingOn.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Objects\EntityKey.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Objects\Player.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Scene\Source\SceneManager.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Scene\Source\Title.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Scene\Source\StageSelect.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Scene\Source\Game.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\KamataEngine\Adapter\Novice.h">
+      <Filter>KamataEngine\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="Program\Common\CustomNovice.h" />
+    <ClInclude Include="Program\Common\Easings.h" />
+    <ClInclude Include="Program\Common\GetInput.h" />
+    <ClInclude Include="Program\Common\InputConfig.h" />
+    <ClInclude Include="Program\Common\NoviceButtonWidget.h" />
+    <ClInclude Include="Program\Common\Objects.h" />
+    <ClInclude Include="Program\Common\SaveData.h" />
+    <ClInclude Include="Program\Common\SceneChangeAnimations.h" />
+    <ClInclude Include="Program\Common\ScreenSizeGet.h" />
+    <ClInclude Include="Program\Common\SoundHandle.h" />
+    <ClInclude Include="Program\Common\Structures.h" />
+    <ClInclude Include="Program\Common\GraphHandle.h" />
+    <ClInclude Include="Program\Proccess.h" />
+    <ClInclude Include="Program\Common\Camera.h" />
+    <ClInclude Include="Program\Common\CommonFunctions.h" />
+    <ClInclude Include="Program\Stage\Stage.h" />
+    <ClInclude Include="Program\Blocks\BlockDataBase.h" />
+    <ClInclude Include="Program\Common\Math\Vector2.h" />
+    <ClInclude Include="Program\Common\Math\Vector2Int.h" />
+    <ClInclude Include="Program\Stage\StageManager.h" />
+    <ClInclude Include="Program\Blocks\BlockManager.h" />
+    <ClInclude Include="Program\Blocks\Source\Goal.cpp" />
+    <ClInclude Include="Program\Blocks\Source\Switch.cpp" />
+    <ClInclude Include="Program\Blocks\Source\SwitchingOff.cpp" />
+    <ClInclude Include="Program\Blocks\BlockData.h" />
+    <ClInclude Include="Program\Objects\EntityKey.h" />
+    <ClInclude Include="Program\Objects\Player.h" />
+    <ClInclude Include="Program\Scene\SceneManager.h" />
+    <ClInclude Include="Program\Scene\SceneBase.h" />
+    <ClInclude Include="Program\Scene\Title.h" />
+    <ClInclude Include="Program\Scene\StageSelect.h" />
+    <ClInclude Include="Program\Scene\Game.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="screenSizeGet.manifest" />
+  </ItemGroup>
+</Project>
