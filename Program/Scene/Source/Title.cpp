@@ -1,7 +1,9 @@
 #include <Scene/Title.h>
 #include <Common/Easings.h>
+#include <Common/CommonFunctions.h>
 #include <Common/CustomNovice.h>
 #include <Common/GetInput.h>
+#include <Common/GraphHandle.h>
 #include <Common/SoundHandle.h>
 
 namespace {
@@ -10,6 +12,40 @@ namespace {
 auto sGetInput = sGetInput->GetInstance();
 
 } // namespace
+
+
+unsigned int SceneTitle::colorTop_ = 0x000000FF;
+int SceneTitle::isFirstTitle_ = 0;
+
+Camera SceneTitle::cameraT_;
+float SceneTitle::rotate_ = 0.0f;
+Vector2 SceneTitle::scale_ = { 0.8f,0.8f };
+Vector2 SceneTitle::translate_ = { 384, 384 - 48 };
+bool SceneTitle::isRotate_ = 0;
+float SceneTitle::changeSum_ = 0.0f;
+int SceneTitle::which_ = 0;
+int SceneTitle::isColor_ = 2;
+
+int SceneTitle::count_ = 0;
+int SceneTitle::maxCount_ = 30;
+float SceneTitle::degree_ = 0;
+float SceneTitle::preRotate_ = 0.0f;
+
+float SceneTitle::colorTeach_ = 0x00000000;
+int SceneTitle::toSelectView_ = 0;
+Vector2 SceneTitle::stagePos_ = { CustomNovice::WinWidth() / 2,2100 };
+Vector2 SceneTitle::transitionPos_ = {};
+
+Vector2 SceneTitle::wid_ = { 128.0f,128.0f };
+Vector2 SceneTitle::player_ = { 1200,1500 };
+Vector2 SceneTitle::playerScale_ = { 1.0f,1.0f };
+float SceneTitle::playerRotate_ = 0.0f;
+Vector2 SceneTitle::leftTop_ = { player_.x - wid_.x,player_.y - wid_.y };
+Vector2 SceneTitle::rightTop_ = { player_.x + wid_.x,player_.y - wid_.y };
+Vector2 SceneTitle::leftBottom_ = { player_.x - wid_.x,player_.y - wid_.y };
+Vector2 SceneTitle::rightBottom_ = { player_.x + wid_.x,player_.y - wid_.y };
+
+int SceneTitle::titleColor_ = 0xFFFFFF00;
 
 void Title::Initialize() {
 	cameraT_.ResetCamera();
