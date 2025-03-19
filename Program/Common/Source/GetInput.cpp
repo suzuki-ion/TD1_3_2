@@ -461,33 +461,3 @@ bool GetInput::IsInputType(InputType inputType1, InputType inputType2) {
 InputType GetInput::NowInputType() {
     return nowInputType_;
 }
-
-bool GetInput(InputType inputType, int keyID) {
-    switch (inputType) {
-        case InputType::KEYBOARD:
-            return GetInput::GetInstance()->Keys(keyID);
-        case InputType::MOUSE:
-            return GetInput::GetInstance()->MousePushButton(keyID);
-        case InputType::JOYSTICK:
-            return GetInput::GetInstance()->JoystickPushButton(0, keyID);
-        default:
-            return false;
-    }
-}
-
-bool GetInput(InputType inputType, std::vector<int> keyID) {
-    switch (inputType) {
-        case InputType::KEYBOARD:
-            return GetInput::GetInstance()->Keys(keyID);
-        case InputType::MOUSE:
-            return GetInput::GetInstance()->MousePushButton(keyID);
-        case InputType::JOYSTICK:
-            return GetInput::GetInstance()->JoystickPushButton(0, keyID);
-        default:
-            return false;
-    }
-}
-
-InputType GetNowInputType() {
-    return GetInput::GetInstance()->NowInputType();
-}

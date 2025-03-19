@@ -7,35 +7,6 @@
 #include <Common/Math/Vector2Int.h>
 #include <Common/Math/Matrix3x3.h>
 
-struct Sound {
-    // Noviceでの再生用のID
-    int id = -1;
-    // 音声の再生音量
-    float volume = 1.0f;
-    // 音声のループフラグ
-    bool isLoop = false;
-};
-
-// ブロックの構造体
-struct Block {
-    // ブロックのテクスチャID
-    int textureID = -1;
-    // ギミックを動かすときの操作方法
-    int gimmickOperateType = 0;
-    // 歩いたときに鳴る音
-    int sound = 0;
-    // 隣り合う同ブロックと繋がるテクスチャか否か
-    bool isConnectTexture = false;
-    // 当たり判定をするか否か
-    bool isCollision = false;
-    // 描画するか否か
-    bool isDrawing = false;
-    // 背景のブロックを描画するか否かのフラグ
-    bool isDrawingBackBlock = false;
-    // 下から通り抜けられるかのフラグ
-    bool isThrouth = false;
-};
-
 // 配列の範囲
 struct ArrayRange {
     Vector2Int pos;
@@ -92,62 +63,6 @@ struct AnimRect {
     int endCount = 0;
     // 色
     unsigned int color = WHITE;
-};
-
-// Novice用ボタンの構造体
-struct NoviceButton {
-    // ボタン描画位置
-    Vector2 pos;
-    // ボタンの横幅
-    float width = 0;
-    // ボタンの縦幅
-    float height = 0;
-    // ボタンの識別番号
-    int id = 0;
-    // ボタン通常時に描画する画像
-    // (不使用なら -1 に設定しておく)
-    int graphHandle2Usually = -1;
-    // ボタン選択時に描画する画像
-    // (不使用なら -1 に設定しておく。ちなみにその場合、通常時の画像が使われる。)
-    int graphHandle2Select = -1;
-    // ボタン決定時に描画する画像
-    // (不使用なら -1 に設定しておく。ちなみにその場合、選択時の画像が使われる。)
-    int graphHandle2Pushed = -1;
-    // ボタン選択時の音
-    // (不使用なら -1 に設定しておく)
-    int soundHandle2Select = -1;
-    // ボタン決定時の音
-    // (不使用なら -1 に設定しておく)
-    int soundHandle2Pushed = -1;
-    // 文字描画時に使用するフォント
-    // (不使用なら -1 に設定しておく)
-    int fontGh = -1;
-    // 文字の横幅
-    int fontWidth = 1;
-    // 文字の縦幅
-    int fontHeight = 1;
-    // 文字描画時の横幅
-    int fontDrawWidth = 1;
-    // 文字描画時の縦幅
-    int fontDrawHeight = 1;
-    // 文字の表示方法
-    int fontDrawMethod = 0;
-    // 文字の描画時のずらし座標
-    Vector2 fontDrawShift;
-    // 文字間のマージン
-    Vector2Int fontMargin;
-    // ボタン通常時の描画色
-    unsigned int color2Usually = 0xFFFFFF80;
-    // ボタン選択時の描画色
-    unsigned int color2Select = WHITE;
-    // ボタン決定時の描画色
-    unsigned int color2Pushed = 0xFF8080FF;
-    // ボタンに表示する文字
-    std::string str = "\0";
-    // 個別の選択用キー
-    std::vector<int> selectKeys;
-    // 個別の決定用キー
-    std::vector<int> pushedKeys;
 };
 
 // アニメーション用構造体群

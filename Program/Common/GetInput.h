@@ -387,7 +387,3 @@ private:
 
     InputType nowInputType_ = INPUT_TYPE_NONE;
 };
-
-bool GetInput(InputType inputType, int keyID);
-bool GetInput(InputType inputType, std::vector<int> keyID);
-InputType GetNowInputType();

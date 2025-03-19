@@ -111,6 +111,8 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp" />
+    <ClCompile Include="Program\Common\Source\InputManger.cpp" />
+    <ClCompile Include="Program\Common\Source\DrawGrid.cpp" />
     <ClCompile Include="Program\Scene\Source\Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Program\Blocks\Source\SwitchingOn.cpp" />
@@ -142,6 +144,8 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\KamataEngine\Adapter\Novice.h" />
+    <ClInclude Include="Program\Common\DrawGrid.h" />
+    <ClInclude Include="Program\Common\InputManger.h" />
     <ClInclude Include="Program\Scene\Game.h" />
     <ClInclude Include="Program\Blocks\BlockData.h" />
     <ClInclude Include="Program\Blocks\BlockDataBase.h" />

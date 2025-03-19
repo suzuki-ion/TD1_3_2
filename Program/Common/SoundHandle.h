@@ -36,6 +36,15 @@ enum SoundsID {
     SOUNDS
 };
 
+struct Sound {
+    // Noviceでの再生用のID
+    int id = -1;
+    // 音声の再生音量
+    float volume = 1.0f;
+    // 音声のループフラグ
+    bool isLoop = false;
+};
+
 /// @brief サウンドハンドル
 class SoundHandle {
 public:

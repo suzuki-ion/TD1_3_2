@@ -107,6 +107,12 @@
     <ClCompile Include="Program\Scene\Source\Game.cpp">
       <Filter>KamataEngine</Filter>
     </ClCompile>
+    <ClCompile Include="Program\Common\Source\DrawGrid.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Common\Source\InputManger.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\KamataEngine\Adapter\Novice.h">
@@ -144,6 +150,8 @@
     <ClInclude Include="Program\Scene\Title.h" />
     <ClInclude Include="Program\Scene\StageSelect.h" />
     <ClInclude Include="Program\Scene\Game.h" />
+    <ClInclude Include="Program\Common\DrawGrid.h" />
+    <ClInclude Include="Program\Common\InputManger.h" />
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="screenSizeGet.manifest" />
